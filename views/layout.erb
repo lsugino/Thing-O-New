@@ -4,6 +4,14 @@
     <body background="http://p.twimg.com/AsjRIWaCEAAxmDx.jpg:large">
   <head>
   <body>
-    <%= yield %>
+    <form action="/" method="post">
+		  <input type="text" name="name">
+		  <input type="submit" value="save">
+		</form>
+		
+		<% @all_users.each do |user| %>  
+	  <%="#{user.name} "%>
+		<% end %>
+
   </body>
 </html>
