@@ -1,7 +1,16 @@
 <html>
   <head>
-    <h1 style="color:white">Welcome to Boo's fan page!</h1>
-    <body background="http://p.twimg.com/AsjRIWaCEAAxmDx.jpg:large">
+<style>
+  body { 
+  background-image: url("http://p.twimg.com/AsjRIWaCEAAxmDx.jpg:large");
+  color:white;
+  }
+  h1,h2,h3,h4,h5,h6,p{
+    color:white;
+  }
+
+</style>
+  <!--     <link rel="stylesheet" type="text/css" href="../public/style.css" media="screen" /> -->
   <head>
   <body>
     <form action="/" method="post">
@@ -9,9 +18,8 @@
 		  <input type="submit" value="save">
 		</form>
 		
-		<% @all_users.each do |user| %>  
-	  <%="#{user.name} "%>
-		<% end %>
+
+    <%= yield %>
 
   </body>
 </html>

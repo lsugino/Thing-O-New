@@ -1,1 +1,6 @@
-<h3 style="color:white">Tell us your name if you love Boo!</h3>
+<h3>Tell us your name if you love Boo!</h3>
+<ul>
+    <% @all_users.each do |user| %>  
+    <li><%="#{user.name} "%></li>
+    <% end %>
+</ul>
