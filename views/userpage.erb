@@ -1,0 +1,12 @@
+<h1>Edit your profile</h1>
+<form action='/users/<%=@user.id%>' method='post'>
+  <input type="text" name="name" value="<%= @user.name %>">
+  <input type="hidden" name="_method" value="put">
+  <input type="submit">
+</form>
+
+<h1>Delete your profile</h1>
+<form action='/users/<%=@user.id%>' method='post'>
+  <input type="hidden" name="_method" value="delete">
+  <input type="submit" value="Delete me!">
+</form>

@@ -11,4 +11,10 @@ namespace :db do
   task :drop do
     `dropdb thing_o_new_dev`
   end
+
 end
+
+# desc "load app into IRB"
+# task :console do
+#   irb -r './app.rb'
+# end
